@@ -41,7 +41,9 @@
 
 .workContainer a:hover {
   background-color: var(--icon-background-color-hover);
-  margin-top: -16px;
+  /* margin-top: -16px; */
+  transform: scale(1.03) translateY(-3px);
+
   transition: all 300ms ease-in-out;
 }
 

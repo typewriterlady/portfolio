@@ -20,7 +20,8 @@
 .nav li:hover {
   color: var(--main-color);
   background-color: var(--white-color);
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
+  transform: scale(1.03) translateY(-3px);
   transition: all 400ms ease-in-out;
 }
 
