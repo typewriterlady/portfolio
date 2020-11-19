@@ -91,7 +91,7 @@ export default function HelpContent() {
             </ul>
             <p>
               <img
-                src="https://lh2.googleusercontent.com/4Tw9-GpNlRpHBIeE6JCgINcnhb02h1t_w4Jf800QX4FIoPsVhhkyAXxKVQ3GskcruQ=w560-h215"
+                src="../../../waymosensors.jpg"
                 width="100%"
                 height="auto"
                 alt=""
@@ -128,24 +128,6 @@ export default function HelpContent() {
                 and yielding to pedestrians or cyclists
               </li>
             </ul>
-            {/* <p>Watch Waymo technology in action in the video below.</p>
-            <iframe
-              width="100%"
-              title="Waymo self-driving journey video"
-              src="//www.youtube.com/embed/B8R148hFxPw"
-              height="auto"
-            ></iframe>
-            <p>
-              To learn even more about Waymo technology in detail, read our{" "}
-              <a
-                href="https://waymo.com/safety/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                Safety Report
-              </a>
-              .
-            </p> */}
             See the full article{" "}
             <A
               href="https://support.google.com/waymo/answer/9190838?hl=en&ref_topic=9311856"

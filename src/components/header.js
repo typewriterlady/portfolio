@@ -30,7 +30,7 @@ class Header extends React.Component {
     return (
     <header className={Styles.header}>
       <div className={Styles.navigation + " wrapper"}>
-        <img src="../../akasha.png" alt="Akasha"></img>
+        <img src="../../akasha.png" alt="Akasha" height="200px" width="200px"></img>
         <NavBar />
       </div>
       <div className={Styles.text + " wrapper"}>
