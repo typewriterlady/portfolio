@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Header from "../components/header"
 import Styles from "../styles/main.module.css"
 import Footer from "../components/footer"
@@ -12,13 +12,17 @@ import {
   FileLike,
 } from "../components/svgs"
 import A from "../components/a"
+import gsap from "gsap/gsap-core"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+
+gsap.core.globals("ScrollTrigger", ScrollTrigger)
 
 function ImageLink(props) {
   return (
-    <Link to={props.link}>
+    <Link to={props.link} className={Styles.staggerAnimate}>
       <div className={Styles.imageLink}>
-          {props.picture}
-          <p className={Styles.center}>{props.title}</p>
+        {props.picture}
+        <p className={Styles.center}>{props.title}</p>
       </div>
     </Link>
   )
@@ -28,12 +32,12 @@ function ImageA(props) {
   return (
     <A
       href={props.link}
+      className={Styles.staggerAnimate}
       label="jounalism example"
       text={
         <div className={Styles.imageLink}>
-            <div className={Styles.picture}>
-              {props.picture}</div>
-            <p className={Styles.center}>{props.title}</p>
+          <div className={Styles.picture}>{props.picture}</div>
+          <p className={Styles.center}>{props.title}</p>
         </div>
       }
     />
@@ -44,7 +48,32 @@ function Picture(props) {
   return <img src={props.src} alt={props.alt} />
 }
 
+const classN = "." + Styles.staggerAnimate
+
 export default function Portfolio() {
+  useEffect(() => {
+    console.log(classN)
+    gsap.registerPlugin(ScrollTrigger)
+    ScrollTrigger.batch(classN, {
+      onEnter: (elements, triggers) => {
+        gsap.to(elements, { opacity: 1, stagger: 0.15, overwrite: true })
+        console.log(elements.length, "elements entered")
+      },
+      onLeave: (elements, triggers) => {
+        gsap.to(elements, { opacity: 0, stagger: 0.15, overwrite: true })
+        console.log(elements.length, "elements left")
+      },
+      onEnterBack: (elements, triggers) => {
+        gsap.to(elements, { opacity: 1, stagger: 0.15, overwrite: true })
+        console.log(elements.length, "elements entered")
+      },
+      onLeaveBack: (elements, triggers) => {
+        gsap.to(elements, { opacity: 0, stagger: 0.15, overwrite: true })
+        console.log(elements.length, "elements left")
+      },
+    })
+  }, [])
+
   return (
     <div>
       <Header headerText="My work" paragraph="Description of page" />
@@ -69,8 +98,16 @@ export default function Portfolio() {
         </div>
         <h1>Content strategy</h1>
         <div className={Styles.workContainer}>
-          <ImageLink title="Help Center" picture={<Help />} link="/portfolio/help-center/" />
-          <ImageLink title="Knowledge Base" picture={<School />} link="/portfolio/knowledge-base/" />
+          <ImageLink
+            title="Help Center"
+            picture={<Help />}
+            link="/portfolio/help-center/"
+          />
+          <ImageLink
+            title="Knowledge Base"
+            picture={<School />}
+            link="/portfolio/knowledge-base/"
+          />
           <ImageLink
             title="Style guides &amp; more"
             picture={<FileLike />}
@@ -131,12 +168,7 @@ export default function Portfolio() {
           />
           <ImageA
             title="Long form feature piece"
-            picture={
-              <Picture
-                src="../../beekeeper.jpg"
-                alt="beekeeper"
-              />
-            }
+            picture={<Picture src="../../beekeeper.jpg" alt="beekeeper" />}
             link="http://www.pointparknewsservice.com/2013/11/12/the-secret-life-of-beekeepers/"
           />
         </div>

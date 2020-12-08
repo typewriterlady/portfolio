@@ -6,6 +6,8 @@
   color: var(--dark-grey);
   border: 1px solid var(--border-color);
   z-index: 1;
+  height: 100%;
+  overflow: hidden;
 }
 
 .workContainer {
@@ -23,7 +25,7 @@
   font-size: 1.5em;
 }
 
-.workContainer a {
+.workContainer .staggerAnimate {
   flex: 250px;
   max-height: 300px;
   border-radius: 6%;
@@ -209,4 +211,18 @@ form.contact {
 
 :focus {
   outline-color: var(--main-color);
+}
+
+.mainColumn .cover {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: var(--white-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.staggerAnimate {
+  opacity: 0;
 }
