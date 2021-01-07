@@ -6,8 +6,7 @@ import Footer from "../components/footer"
 export default function About() {
   return (
     <div>
-      <Header
-        headerText="About me"/>
+      <Header headerText="About me" />
       <div className={Styles.mainColumn + " wrapper"}>
         <h1>Where are you from?</h1>
         <p>

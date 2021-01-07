@@ -76,7 +76,7 @@ export default function Portfolio() {
 
   return (
     <div>
-      <Header headerText="My work"/>
+      <Header headerText="My work" />
       <div className={Styles.mainColumn + " wrapper"}>
         <h1>UX writing</h1>
         <div className={Styles.workContainer}>

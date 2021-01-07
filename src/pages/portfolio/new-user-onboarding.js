@@ -6,8 +6,7 @@ import Footer from "../../components/footer"
 export default function NewUserOnboarding() {
   return (
     <div>
-      <Header
-        headerText="New User Onboarding"/>
+      <Header headerText="New User Onboarding" />
       <div className={Styles.mainColumn + " wrapper"}>
         <h1>New user onboarding flow for Nest Hello</h1>
         <h2>Background</h2>

@@ -6,7 +6,7 @@ import Footer from "../../components/footer"
 export default function Microcopy() {
   return (
     <div>
-      <Header headerText="Microcopy"/>
+      <Header headerText="Microcopy" />
       <div className={Styles.mainColumn + " wrapper"}>
         <h1>​Making Waymo more accessible through better riding tips</h1>
         <div className={Styles.twoColumns}>
@@ -145,7 +145,10 @@ export default function Microcopy() {
               </ul>
             </li>
             <li>
-              Explained up front that <strong className={Styles.highlightword}>order is cancelled</strong>
+              Explained up front that{" "}
+              <strong className={Styles.highlightword}>
+                order is cancelled
+              </strong>
               <ul>
                 <li>
                   <strong>Why:</strong> The user wants to know right away why
@@ -159,7 +162,8 @@ export default function Microcopy() {
           </p>
           <ul>
             <li>
-              Changed button to "<strong className={Styles.highlightword}>ORDER AGAIN</strong>"
+              Changed button to "
+              <strong className={Styles.highlightword}>ORDER AGAIN</strong>"
               <ul>
                 <li>
                   <strong>Why:</strong> Gives the user an easy way to try again
@@ -167,13 +171,15 @@ export default function Microcopy() {
               </ul>
             </li>
             <li>
-              Updated to "CALL <strong className={Styles.highlightword}>SUPPORT</strong>"{" "}
+              Updated to "CALL{" "}
+              <strong className={Styles.highlightword}>SUPPORT</strong>"{" "}
               <ul>
                 <li>
                   <strong>Why:</strong> "REQUEST CALLBACK" sounds too robotic,
                   like language you wouldn't use in real conversation. Also
                   doesn't explain who you would be talking to, so updated to "
-                  <strong className={Styles.highlightword}>CALL SUPPORT</strong>"
+                  <strong className={Styles.highlightword}>CALL SUPPORT</strong>
+                  "
                 </li>
               </ul>
             </li>

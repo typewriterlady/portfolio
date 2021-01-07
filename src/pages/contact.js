@@ -22,8 +22,7 @@ function SVGA(props) {
 export default function Contact() {
   return (
     <div>
-      <Header
-        headerText="Contact Me"/>
+      <Header headerText="Contact Me" />
       <div className={Styles.mainColumn + " wrapper"}>
         <h1>Just say hi</h1>
         <p>I'm always happy to meet new people, so let's talk</p>
@@ -45,20 +44,32 @@ export default function Contact() {
             title="Meet me"
           />
         </div>
-        <form className={Styles.contact} name="contact" method="POST" data-netlify="true">
+        <form
+          className={Styles.contact}
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
           <legend>
             <h2>Message me</h2>
           </legend>
           <label>
-            Name<input type="text" name="name" placeholder="Albus Dumbledore"/>
+            Name
+            <input type="text" name="name" placeholder="Albus Dumbledore" />
           </label>
           <br></br>
           <label>
-            Email<input type="email" name="email" placeholder="adumbledore@hogwarts.edu" />
+            Email
+            <input
+              type="email"
+              name="email"
+              placeholder="adumbledore@hogwarts.edu"
+            />
           </label>
           <br></br>
           <label>
-            Message<textarea name="message" placeholder="You're invited!" ></textarea>
+            Message
+            <textarea name="message" placeholder="You're invited!"></textarea>
           </label>
           <br></br>
           <button type="submit">Send!</button>

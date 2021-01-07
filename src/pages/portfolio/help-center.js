@@ -6,7 +6,7 @@ import Footer from "../../components/footer"
 export default function HelpCenter() {
   return (
     <div>
-      <Header headerText="Help Center"/>
+      <Header headerText="Help Center" />
       <div className={Styles.mainColumn + " wrapper"}>
         <h1>Launched Waymo Help Center</h1>
         <img

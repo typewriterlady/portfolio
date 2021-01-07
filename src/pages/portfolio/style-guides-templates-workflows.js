@@ -6,8 +6,7 @@ import Footer from "../../components/footer"
 export default function StyleGuidesTemplatesWorkflows() {
   return (
     <div>
-      <Header
-        headerText="Styles guides, templates, &amp; workflows"/>
+      <Header headerText="Styles guides, templates, &amp; workflows" />
       <div className={Styles.mainColumn + " wrapper"}>
         <h2>Create a human voice for a robot car at Waymo</h2>
         <p>
