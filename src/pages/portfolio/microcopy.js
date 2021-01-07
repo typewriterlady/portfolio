@@ -6,7 +6,7 @@ import Footer from "../../components/footer"
 export default function Microcopy() {
   return (
     <div>
-      <Header headerText="Microcopy" paragraph="Description of page" />
+      <Header headerText="Microcopy"/>
       <div className={Styles.mainColumn + " wrapper"}>
         <h1>​Making Waymo more accessible through better riding tips</h1>
         <div className={Styles.twoColumns}>

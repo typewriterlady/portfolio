@@ -52,9 +52,6 @@ class Header extends React.Component {
             {this.state.title}
             <span id="blinker" aria-hidden="true"></span>
           </h1>
-          <div>
-            <p>{this.props.paragraph}</p>
-          </div>
         </div>
       </header>
     )

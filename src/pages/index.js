@@ -14,11 +14,7 @@ export default function Home() {
     <div >
       <Header
       animation={animate}
-      headerText="Hello, I'm Akasha Chamberlain"
-      paragraph=""
-      // paragraph="I'm a content strategist for Waymo (formerly the Google self-driving car project)
-      // I'm passionate about writing simple content that makes life easier for the people reading it"
-      />
+      headerText="Hello, I'm Akasha Chamberlain"/>
       <div className={Styles.mainColumn + " wrapper"} >
         <div className={Styles.cover + " cover"}></div>
         <p>I'm a content strategist for Waymo (formerly the Google self-driving car project) </p>

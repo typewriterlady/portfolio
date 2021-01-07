@@ -7,8 +7,7 @@ import { Link } from "gatsby";
 export default function FourOFour() {
   return (
     <div >
-      <Header headerText="Page not found" 
-      paragraph="The page you were looking for does not exist"/>
+      <Header headerText="Page not found"/>
       <div className={Styles.mainColumn + " wrapper"} >
         <p>I'm sorry, but the page you were looking for does not exist.</p>
         <p>Click <Link to="/">here</Link> to go to the home page.</p>

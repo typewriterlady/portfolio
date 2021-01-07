@@ -7,11 +7,7 @@ export default function About() {
   return (
     <div>
       <Header
-        headerText="About me"
-        paragraph="I'm a Pennsylvania girl, who found herself living in Silicon Valley.
-      I spent most of my life in Central Pennsylvania outside of Harrisburg, 
-      before moving to Pittsburgh and then California."
-      />
+        headerText="About me"/>
       <div className={Styles.mainColumn + " wrapper"}>
         <h1>Where are you from?</h1>
         <p>

@@ -7,7 +7,7 @@ import A from "../../components/a"
 export default function HelpContent() {
   return (
     <div>
-      <Header headerText="Help Content" paragraph="Description of page" />
+      <Header headerText="Help Content" />
       <div className={Styles.mainColumn + " wrapper"}>
         <div className={Styles.twoColumns}>
           <div className={Styles.column_1}>

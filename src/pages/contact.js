@@ -23,10 +23,7 @@ export default function Contact() {
   return (
     <div>
       <Header
-        headerText="Contact Me"
-        paragraph="I'm a content strategist for Waymo (formerly the 
-      Google self-driving car project)"
-      />
+        headerText="Contact Me"/>
       <div className={Styles.mainColumn + " wrapper"}>
         <h1>Just say hi</h1>
         <p>I'm always happy to meet new people, so let's talk</p>

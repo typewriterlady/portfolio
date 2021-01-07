@@ -6,9 +6,7 @@ import Footer from "../components/footer";
 export default function Template() {
   return (
     <div >
-      <Header headerText="Name of Page" 
-      paragraph="Description of page /n
-      Second paragraph of description"/>
+      <Header headerText="Name of Page"/>
       <div className={Styles.mainColumn + " wrapper"} >
         <p>I'm a content strategist for Waymo (formerly the Google self-driving car project) </p>
         <p>I'm passionate about writing simple content that makes life easier for the people reading it </p>
