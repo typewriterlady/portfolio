@@ -12,13 +12,12 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
-    this.timerID = setInterval(() => this.tick(), 100)
+    this.timerID = setInterval(() => this.tick(), 70)
     if (this.props.animation) {
       this.imgTween = gsap.from(this.imgContainer, {
-        duration: 1,
-        scale: 0,
-        delay: 2.8,
-        ease: "power2.out",
+        duration: 1.8,
+        alpha: 0,
+        delay: 1.8,
       })
     }
   }

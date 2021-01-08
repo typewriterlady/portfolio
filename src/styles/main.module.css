@@ -38,12 +38,18 @@
 
 .workContainer.contact a {
   flex: 200px;
-  max-height: none;
+  max-height: 300px;
+  border-radius: 6%;
+  background-color: var(--icon-background-color);
+  border: var(--white-color) 4px solid;
+  align-items: center;
+  transition: all 300ms ease-in-out;
+  overflow: hidden;
 }
 
 .workContainer a:hover {
   background-color: var(--icon-background-color-hover);
-  transform: scale(1.03) translateY(-3px);
+  transform: scale(1.03);
   transition: all 300ms ease-in-out;
 }
 
@@ -211,16 +217,6 @@ form.contact {
 
 :focus {
   outline-color: var(--main-color);
-}
-
-.mainColumn .cover {
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-  background-color: var(--white-color);
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .staggerAnimate {

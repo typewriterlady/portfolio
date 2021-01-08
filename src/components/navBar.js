@@ -15,22 +15,15 @@ const NavLink = props => (
 )
 
 export default function NavBar(props) {
-  useEffect(() => {
-    if (props.animation) {
-      gsap.fromTo(
-        ".navAnimation",
-        { autoAlpha: 0},
-        { autoAlpha: 1, stagger: 0.15, duration: 1 , delay: 3}
-      )
-    }
-    gsap.utils.toArray(".navAnimation").forEach(container => {
-      let item = container.querySelector(".item")
-      let tl = gsap.timeline({ paused: true })
-      tl.to(item, { scale:1.1, ease:"power3.out", duration:.1 })
-      container.addEventListener("mouseenter", () => tl.play())
-      container.addEventListener("mouseleave", () => tl.reverse())
-    })
-  }, [])
+  // useEffect(() => {
+  //   gsap.utils.toArray(".navAnimation").forEach(container => {
+  //     let item = container.querySelector(".item")
+  //     let tl = gsap.timeline({ paused: true })
+  //     tl.to(item, { scale:1.1, ease:"power3.out", duration:.1 })
+  //     container.addEventListener("mouseenter", () => tl.play())
+  //     container.addEventListener("mouseleave", () => tl.reverse())
+  //   })
+  // }, [])
 
   return (
     <div className={Styles.nav}>
