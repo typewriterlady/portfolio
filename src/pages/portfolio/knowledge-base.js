@@ -6,7 +6,7 @@ import Footer from "../../components/footer"
 export default function KnowledgeBase() {
   return (
     <div>
-      <Header headerText="Help Content" />
+      <Header headerText="Knowledge Base" />
       <div className={Styles.mainColumn + " wrapper"}>
         <h2>Launched the Knowledge Base</h2>
         <p>
