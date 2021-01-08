@@ -2,6 +2,7 @@ import React from "react"
 import Styles from "../styles/header.module.css"
 import NavBar from "./navBar"
 import { gsap } from "gsap"
+import { Link } from "gatsby"
 
 class Header extends React.Component {
   constructor(props) {
@@ -37,13 +38,15 @@ class Header extends React.Component {
     return (
       <header className={Styles.header}>
         <div className={Styles.navigation + " wrapper"}>
-          <img
-            src="../../akasha.png"
-            alt="Akasha"
-            height="200px"
-            width="200px"
-            ref={img => (this.imgContainer = img)}
-          />
+          <Link to="/home">
+            <img
+              src="../../akasha.png"
+              alt="Akasha"
+              height="200px"
+              width="200px"
+              ref={img => (this.imgContainer = img)}
+            />
+          </Link>
           <NavBar animation={this.props.animation} />
         </div>
         <div className={Styles.text + " wrapper"}>

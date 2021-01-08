@@ -32,14 +32,23 @@
   display: inline-block;
 }
 
+.contact a {
+  transition: all 300ms ease-in-out;
+}
+
+.contact a svg {
+  transition: all 300ms ease-in-out;
+}
+
 .contact a:hover {
   border-bottom: 1px solid var(--white-color);
-  transition: all 400ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .contact a:hover svg {
-  fill: purple;
-  transition: all 200ms ease-in-out;
+  fill: var(--main-color);
+  transform: scale(1.2);
+  transition: all 300ms ease-in-out;
 }
 
 .contact a {

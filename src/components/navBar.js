@@ -1,7 +1,6 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Styles from "../styles/navBar.module.css"
 import { Link } from "gatsby"
-import gsap from "gsap/gsap-core"
 
 const NavLink = props => (
   <Link
@@ -15,16 +14,6 @@ const NavLink = props => (
 )
 
 export default function NavBar(props) {
-  // useEffect(() => {
-  //   gsap.utils.toArray(".navAnimation").forEach(container => {
-  //     let item = container.querySelector(".item")
-  //     let tl = gsap.timeline({ paused: true })
-  //     tl.to(item, { scale:1.1, ease:"power3.out", duration:.1 })
-  //     container.addEventListener("mouseenter", () => tl.play())
-  //     container.addEventListener("mouseleave", () => tl.reverse())
-  //   })
-  // }, [])
-
   return (
     <div className={Styles.nav}>
       <ul>

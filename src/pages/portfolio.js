@@ -57,19 +57,15 @@ export default function Portfolio() {
     ScrollTrigger.batch(classN, {
       onEnter: (elements, triggers) => {
         gsap.to(elements, { opacity: 1, stagger: 0.15, overwrite: true })
-        console.log(elements.length, "elements entered")
       },
       onLeave: (elements, triggers) => {
         gsap.to(elements, { opacity: 0, stagger: 0.15, overwrite: true })
-        console.log(elements.length, "elements left")
       },
       onEnterBack: (elements, triggers) => {
         gsap.to(elements, { opacity: 1, stagger: 0.15, overwrite: true })
-        console.log(elements.length, "elements entered")
       },
       onLeaveBack: (elements, triggers) => {
         gsap.to(elements, { opacity: 0, stagger: 0.15, overwrite: true })
-        console.log(elements.length, "elements left")
       },
     })
   }, [])
