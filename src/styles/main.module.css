@@ -222,3 +222,17 @@ form.contact {
 .staggerAnimate {
   opacity: 0;
 }
+
+.mainColumn .imgCaption {
+  max-width: 600px;
+  display:block;
+  margin: auto;
+}
+
+.mainColumn .imgCaption p {
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: grey;
+  font-size: 1.1em;
+}
