@@ -14,7 +14,6 @@ import {
 import A from "../components/a"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-
 gsap.core.globals("ScrollTrigger", ScrollTrigger)
 
 function ImageLink(props) {
@@ -52,7 +51,6 @@ const classN = "." + Styles.staggerAnimate
 
 export default function Portfolio() {
   useEffect(() => {
-    console.log(classN)
     gsap.registerPlugin(ScrollTrigger)
     ScrollTrigger.batch(classN, {
       onEnter: (elements, triggers) => {

@@ -28,3 +28,14 @@
   background-color: #a37cddc7;
   border-bottom: 2px solid var(--white-color);
 }
+
+@media (max-width: 650px) {
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav li {
+    margin: 4px 8px;
+  }
+}
