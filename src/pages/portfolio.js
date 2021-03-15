@@ -12,7 +12,7 @@ import {
   FileLike,
 } from "../components/svgs"
 import A from "../components/a"
-import gsap from "gsap/gsap-core"
+import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 gsap.core.globals("ScrollTrigger", ScrollTrigger)
