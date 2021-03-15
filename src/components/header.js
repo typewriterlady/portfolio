@@ -1,26 +1,16 @@
 import React from "react"
 import Styles from "../styles/header.module.css"
 import NavBar from "./navBar"
-import { gsap } from "gsap"
 import { Link } from "gatsby"
 
 class Header extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { title: this.props.headerText[0], n: 0 }
-    this.imgContainer = null
-    this.imgTween = null
+    this.state = { title: " ", n: 0 }
   }
 
   componentDidMount() {
     this.timerID = setInterval(() => this.tick(), 70)
-    if (this.props.animation) {
-      this.imgTween = gsap.from(this.imgContainer, {
-        duration: 1.8,
-        alpha: 0,
-        delay: 1.8,
-      })
-    }
   }
 
   tick() {
@@ -47,7 +37,7 @@ class Header extends React.Component {
               ref={img => (this.imgContainer = img)}
             />
           </Link>
-          <NavBar animation={this.props.animation} />
+          <NavBar />
         </div>
         <div className={Styles.text + " wrapper"}>
           <h1>

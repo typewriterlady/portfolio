@@ -9,9 +9,9 @@ export default function HelpContent() {
     <div>
       <Header headerText="Help Content" />
       <div className={Styles.mainColumn + " wrapper"}>
+        <h1>Teach riders how Waymo drives</h1>
         <div className={Styles.twoColumns}>
           <div className={Styles.column_1}>
-            <h1>Teach riders how Waymo drives</h1>
             <h2>What I did</h2>
             <ul>
               <li>
@@ -138,9 +138,9 @@ export default function HelpContent() {
         </div>
         <br></br>
         <hr></hr>
+        <h1>Explain the rider rules</h1>
         <div className={Styles.twoColumns}>
           <div className={Styles.column_1}>
-            <h1>Explain the rider rules</h1>
             <h2>What I did​</h2>
             <p>
               The only document riders had available to them to understand the
@@ -161,7 +161,7 @@ export default function HelpContent() {
               <li>
                 <strong>UX &amp; Customer Support</strong> - to understand where
                 riders were confused about the rules from the TOS and needed
-                more reenforcement <br />​
+                more reenforcement​
               </li>
             </ul>
             <h2>Challenges</h2>

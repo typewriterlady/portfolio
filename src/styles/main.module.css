@@ -21,7 +21,7 @@
 
 .workContainer p {
   color: var(--white-color);
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .workContainer .staggerAnimate {
@@ -233,5 +233,5 @@ form.contact {
   margin: auto;
   text-align: center;
   color: grey;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
