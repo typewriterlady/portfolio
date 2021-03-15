@@ -206,7 +206,7 @@ export default function HelpContent() {
             </div>
             <p>
               Follow these in-car rules to help us create a safe and comfortable
-              experience for all rider.
+              experience for all riders.
             </p>
             <div style={{ backgroundColor: "#F9E5E3" }}>
               <blockquote>
