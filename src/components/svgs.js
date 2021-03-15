@@ -20,11 +20,6 @@ function School() {
   )
 }
 
-// function CopyMe() {
-//   return (
-// )
-// }
-
 function Mail() {
   return (
     <svg
