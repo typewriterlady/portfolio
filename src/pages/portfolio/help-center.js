@@ -1,11 +1,19 @@
 import React from "react"
 import Header from "../../components/header"
-import Styles from "../../styles/main.module.css"
+import * as Styles from "../../styles/main.module.css"
 import Footer from "../../components/footer"
+import { Helmet } from "react-helmet"
 
 export default function HelpCenter() {
   return (
     <div>
+      <Helmet>
+        <title>Help center · Content Strategy · Akasha Chamberlain</title>
+        <meta
+          name="description"
+          content="Example of a help center for content strategy"
+        />
+      </Helmet>
       <Header headerText="Help Center" />
       <div className={Styles.mainColumn + " wrapper"}>
         <h1>Launched Waymo Help Center</h1>

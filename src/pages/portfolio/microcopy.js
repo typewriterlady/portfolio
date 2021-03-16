@@ -1,11 +1,16 @@
 import React from "react"
 import Header from "../../components/header"
-import Styles from "../../styles/main.module.css"
+import * as Styles from "../../styles/main.module.css"
 import Footer from "../../components/footer"
+import { Helmet } from "react-helmet"
 
 export default function Microcopy() {
   return (
     <div>
+      <Helmet>
+        <title>Microcopy · UX writing · Akasha Chamberlain</title>
+        <meta name="description" content="Example of microcopy for UX writing" />
+      </Helmet>
       <Header headerText="Microcopy" />
       <div className={Styles.mainColumn + " wrapper"}>
         <h1>​Making Waymo more accessible through better riding tips</h1>

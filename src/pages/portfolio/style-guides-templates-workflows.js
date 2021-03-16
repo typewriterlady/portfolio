@@ -1,11 +1,19 @@
 import React from "react"
 import Header from "../../components/header"
-import Styles from "../../styles/main.module.css"
+import * as Styles from "../../styles/main.module.css"
 import Footer from "../../components/footer"
+import { Helmet } from "react-helmet"
 
 export default function StyleGuidesTemplatesWorkflows() {
   return (
     <div>
+      <Helmet>
+        <title>Style Guides Templates Workflows · Content Strategy · Akasha Chamberlain</title>
+        <meta
+          name="description"
+          content="Example of style guides, templates, and workflows for content strategy"
+        />
+      </Helmet>
       <Header headerText="Styles guides, templates, &amp; workflows" />
       <div className={Styles.mainColumn + " wrapper"}>
         <h2>Create a human voice for a robot car at Waymo</h2>

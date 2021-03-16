@@ -1,11 +1,19 @@
 import React from "react"
 import Header from "../../components/header"
-import Styles from "../../styles/main.module.css"
+import * as Styles from "../../styles/main.module.css"
 import Footer from "../../components/footer"
+import { Helmet } from "react-helmet"
 
 export default function NewUserOnboarding() {
   return (
     <div>
+      <Helmet>
+        <title>New user onboarding · UX writing · Akasha Chamberlain</title>
+        <meta
+          name="description"
+          content="Example of new user onboarding for UX writing"
+        />
+      </Helmet>
       <Header headerText="New User Onboarding" />
       <div className={Styles.mainColumn + " wrapper"}>
         <h1>New user onboarding flow for Nest Hello</h1>

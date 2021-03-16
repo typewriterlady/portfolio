@@ -1,8 +1,9 @@
 import React, { useEffect } from "react"
 import Header from "../components/header"
-import Styles from "../styles/main.module.css"
+import * as Styles from "../styles/main.module.css"
 import Footer from "../components/footer"
 import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
 import {
   School,
   Lifebuoy,
@@ -70,6 +71,13 @@ export default function Portfolio() {
 
   return (
     <div>
+      <Helmet>
+        <title>Portfolio · Akasha Chamberlain</title>
+        <meta
+          name="description"
+          content="Akasha's portfolio of UX writing, content strategy, journalism and digital media"
+        />
+      </Helmet>
       <Header headerText="My work" />
       <div className={Styles.mainColumn + " wrapper"}>
         <h1>UX writing</h1>

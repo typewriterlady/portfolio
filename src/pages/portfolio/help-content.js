@@ -1,12 +1,20 @@
 import React from "react"
 import Header from "../../components/header"
-import Styles from "../../styles/main.module.css"
+import * as Styles from "../../styles/main.module.css"
 import Footer from "../../components/footer"
 import A from "../../components/a"
+import { Helmet } from "react-helmet"
 
 export default function HelpContent() {
   return (
     <div>
+      <Helmet>
+        <title>Help content · UX writing · Akasha Chamberlain</title>
+        <meta
+          name="description"
+          content="Example of help content for UX writing"
+        />
+      </Helmet>
       <Header headerText="Help Content" />
       <div className={Styles.mainColumn + " wrapper"}>
         <h1>Teach riders how Waymo drives</h1>
@@ -61,7 +69,7 @@ export default function HelpContent() {
               </li>
             </ul>
           </div>
-          <div className={`${Styles.column_2} ${Styles.waymo}`}>
+          <div className={`${Styles.waymo}`}>
             <h2>
               <strong>How Waymo experiences the world</strong>
             </h2>
@@ -191,7 +199,7 @@ export default function HelpContent() {
               </li>
             </ul>
           </div>
-          <div className={`${Styles.column_2} ${Styles.waymo}`}>
+          <div className={`${Styles.waymo}`}>
             <h1>Waymo One public service rules</h1>
             <div style={{ backgroundColor: "#F7F8F9" }}>
               <blockquote>

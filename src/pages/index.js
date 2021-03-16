@@ -1,11 +1,16 @@
 import React from "react"
 import Header from "../components/header"
-import Styles from "../styles/main.module.css"
+import * as Styles from "../styles/main.module.css"
 import Footer from "../components/footer"
+import { Helmet } from "react-helmet"
 
 export default function Home() {
   return (
     <div>
+      <Helmet>
+        <title>Akasha Chamberlain · Content Strategist · UX Writer</title>
+        <meta name="description" content="Experienced Program Manager and Content Strategist with a demonstrated history of working in the technology industry and in Customer Support." />
+      </Helmet>
       <Header headerText="Hello, I'm Akasha Chamberlain" />
       <div className={Styles.mainColumn + " wrapper"}>
         <p>
@@ -21,3 +26,4 @@ export default function Home() {
     </div>
   )
 }
+

@@ -1,5 +1,5 @@
 import React from "react"
-import Styles from "../styles/header.module.css"
+import * as Styles from "../styles/header.module.css"
 import NavBar from "./navBar"
 import { Link } from "gatsby"
 
@@ -34,7 +34,6 @@ class Header extends React.Component {
               alt="Akasha"
               height="200px"
               width="200px"
-              ref={img => (this.imgContainer = img)}
             />
           </Link>
           <NavBar />

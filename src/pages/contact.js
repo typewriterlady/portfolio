@@ -1,9 +1,10 @@
 import React from "react"
 import Header from "../components/header"
-import Styles from "../styles/main.module.css"
+import * as Styles from "../styles/main.module.css"
 import Footer from "../components/footer"
 import A from "./../components/a"
 import { Mail, Twitter, Phone, MapPin } from "../components/svgs"
+import { Helmet } from "react-helmet"
 
 function SVGA(props) {
   return (
@@ -22,6 +23,10 @@ function SVGA(props) {
 export default function Contact() {
   return (
     <div>
+      <Helmet>
+        <title>Contact · Akasha Chamberlain</title>
+        <meta name="description" content="Contact Akasha Chamberlain · Content Strategist · UX Writer" />
+      </Helmet>
       <Header headerText="Contact Me" />
       <div className={Styles.mainColumn + " wrapper"}>
         <h1>Just say hi</h1>

@@ -1,11 +1,19 @@
 import React from "react"
 import Header from "../components/header"
-import Styles from "../styles/main.module.css"
+import * as Styles from "../styles/main.module.css"
 import Footer from "../components/footer"
+import { Helmet } from "react-helmet"
 
 export default function About() {
   return (
     <div>
+      <Helmet>
+        <title>About me · Akasha Chamberlain</title>
+        <meta
+          name="description"
+          content="Where I'm from, my background, what I'm currently doing"
+        />
+      </Helmet>
       <Header headerText="About me" />
       <div className={Styles.mainColumn + " wrapper"}>
         <h1>Where are you from?</h1>

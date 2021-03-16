@@ -1,5 +1,5 @@
 import React from "react"
-import Styles from "../styles/footer.module.css"
+import * as Styles from "../styles/footer.module.css"
 import NavBar from "./navBar"
 import A from "./a"
 import { Mail, Instagram, Twitter, Linkedin } from "../components/svgs"

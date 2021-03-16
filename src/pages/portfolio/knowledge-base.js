@@ -1,11 +1,19 @@
 import React from "react"
 import Header from "../../components/header"
-import Styles from "../../styles/main.module.css"
+import * as Styles from "../../styles/main.module.css"
 import Footer from "../../components/footer"
+import { Helmet } from "react-helmet"
 
 export default function KnowledgeBase() {
   return (
     <div>
+      <Helmet>
+        <title>Knowledge base · Content Strategy · Akasha Chamberlain</title>
+        <meta
+          name="description"
+          content="Example of a knowledge base for content strategy"
+        />
+      </Helmet>
       <Header headerText="Knowledge Base" />
       <div className={Styles.mainColumn + " wrapper"}>
         <h2>Launched the Knowledge Base</h2>

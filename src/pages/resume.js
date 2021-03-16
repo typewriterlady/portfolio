@@ -1,11 +1,16 @@
 import React from "react"
 import Header from "../components/header"
-import Styles from "../styles/main.module.css"
+import * as Styles from "../styles/main.module.css"
 import Footer from "../components/footer"
+import { Helmet } from "react-helmet"
 
 export default function Template() {
   return (
     <div>
+      <Helmet>
+        <title>Resume · Akasha Chamberlain</title>
+        <meta name="description" content="Akasha's Resume" />
+      </Helmet>
       <Header headerText="My resume" />
       <div className={Styles.mainColumn + " wrapper"}>
         <iframe

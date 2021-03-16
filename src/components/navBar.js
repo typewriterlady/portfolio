@@ -1,5 +1,5 @@
 import React from "react"
-import Styles from "../styles/navBar.module.css"
+import * as Styles from "../styles/navBar.module.css"
 import { Link } from "gatsby"
 
 const NavLink = props => (
