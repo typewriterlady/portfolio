@@ -1,7 +1,7 @@
 .footer {
   background-color: var(--dark-grey);
-  height: 200px;
-  margin-top: -48px;
+  height:120px;
+  /* margin-top: -48px; */
 }
 
 .contact {
@@ -14,11 +14,13 @@
   stroke: var(--white-color);
   fill: rgba(0, 0, 0, 0);
   height: 24px;
+  padding-top: 4px;
 }
 
 .footerColumn {
-  padding-top: 48px;
   display: flex;
+  height: 100%;
+  align-items: center;
   justify-content: space-between;
   color: var(--white-color);
 }
@@ -54,4 +56,10 @@
 .contact a {
   border-bottom: 1px solid rgba(255, 255, 255, 0);
   color: var(--white-color);
+}
+
+@media (max-width: 650px) {
+  .navBar {
+    display: none;
+  }
 }

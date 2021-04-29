@@ -40,7 +40,9 @@ export default function Footer(props) {
             </li>
           </ul>
         </div>
-        <NavBar />
+        <div className={Styles.navBar}>
+          <NavBar />
+        </div>
       </div>
     </footer>
   )
