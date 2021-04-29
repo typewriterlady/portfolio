@@ -14,6 +14,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@fontsource/montserrat": "^4.2.2",
+    "@fontsource/nunito": "^4.2.2",
     "gatsby": "^3.0.4",
     "gatsby-plugin-react-helmet": "^4.0.0",
     "gsap": "^3.5.1",

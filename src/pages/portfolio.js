@@ -1,3 +1,4 @@
+import "@fontsource/montserrat"
 import React, { useEffect } from "react"
 import Header from "../components/header"
 import * as Styles from "../styles/main.module.css"

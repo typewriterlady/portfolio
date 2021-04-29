@@ -1,7 +1,5 @@
 # Akasha's Portfolio
 
-## Created with Gatsby
+[See live here](https://www.akashachamberlain.com/)
 
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+Created using React and Gatsby.js, hosted on Netlify.
