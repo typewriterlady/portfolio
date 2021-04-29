@@ -7,5 +7,9 @@ module.exports = {
     url: "https://www.akashachamberlain.com",
     image: "/akasha.png",
   },
-  plugins: [`gatsby-plugin-react-helmet`],
+  plugins: [`gatsby-plugin-react-helmet`, {
+    resolve: 'gatsby-plugin-html-attributes',
+    options: {
+      lang: 'en'
+    }}],
 }

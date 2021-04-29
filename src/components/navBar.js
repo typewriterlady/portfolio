@@ -3,14 +3,16 @@ import * as Styles from "../styles/navBar.module.css"
 import { Link } from "gatsby"
 
 const NavLink = props => (
-  <Link
-    to={props.link}
-    activeClassName={Styles.isCurrent}
-    className="navAnimation"
-    partiallyActive={true}
-  >
-    <li className="item">{props.title}</li>
-  </Link>
+  <li className="item">
+    <Link
+      to={props.link}
+      activeClassName={Styles.isCurrent}
+      className="navAnimation"
+      partiallyActive={true}
+    >
+      {props.title}
+    </Link>
+  </li>
 )
 
 export default function NavBar(props) {
