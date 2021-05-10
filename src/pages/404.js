@@ -13,10 +13,40 @@ export default function FourOFour() {
       </Helmet>
       <Header headerText="Page not found" />
       <div className={Styles.mainColumn + " wrapper"}>
-        <p>I'm sorry, but the page you were looking for does not exist.</p>
+        <p>Sorry! The page you're looking for doesn't exist or moved</p>
         <p>
-          Click <Link to="/">here</Link> to go to the home page.
+          Go to the <Link to="/">home page</Link> or leave feedback below
         </p>
+        <form
+          className={Styles.contact}
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
+          <legend>
+            <h2>Message me</h2>
+          </legend>
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Albus Dumbledore" />
+          </label>
+          <br></br>
+          <label>
+            Email
+            <input
+              type="email"
+              name="email"
+              placeholder="adumbledore@hogwarts.edu"
+            />
+          </label>
+          <br></br>
+          <label>
+            Message
+            <textarea name="message" placeholder="You're invited!"></textarea>
+          </label>
+          <br></br>
+          <button type="submit">Send!</button>
+        </form>
       </div>
       <Footer />
     </div>
