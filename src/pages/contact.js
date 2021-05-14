@@ -5,6 +5,7 @@ import Footer from "../components/footer"
 import A from "./../components/a"
 import { Mail, Twitter, Phone, MapPin } from "../components/svgs"
 import { Helmet } from "react-helmet"
+import ContactForm from "../components/contactform"
 
 function SVGA(props) {
   return (
@@ -52,44 +53,7 @@ export default function Contact() {
             title="Meet me"
           />
         </div>
-        <form
-          className={Styles.contact}
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          action="/contact/success/"
-        >
-          <input type="hidden" name="form-name" value="contact" required />
-          <legend>
-            <h2>Message me</h2>
-          </legend>
-          <label>
-            Name
-            <input
-              type="text"
-              name="name"
-              placeholder="Albus Dumbledore"
-              required
-            />
-          </label>
-          <br></br>
-          <label>
-            Email
-            <input
-              type="email"
-              name="email"
-              placeholder="adumbledore@hogwarts.edu"
-              required
-            />
-          </label>
-          <br></br>
-          <label>
-            Message
-            <textarea name="message" placeholder="You're invited!"></textarea>
-          </label>
-          <br></br>
-          <button type="submit">Send!</button>
-        </form>
+        <ContactForm />
       </div>
       <Footer />
     </div>
