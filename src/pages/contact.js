@@ -25,7 +25,10 @@ export default function Contact() {
     <div>
       <Helmet>
         <title>Contact · Akasha Chamberlain</title>
-        <meta name="description" content="Contact Akasha Chamberlain · Content Strategist · UX Writer" />
+        <meta
+          name="description"
+          content="Contact Akasha Chamberlain · Content Strategist · UX Writer"
+        />
       </Helmet>
       <Header headerText="Contact Me" />
       <div className={Styles.mainColumn + " wrapper"}>
@@ -54,7 +57,9 @@ export default function Contact() {
           name="contact"
           method="POST"
           data-netlify="true"
+          action="/contact/success"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <legend>
             <h2>Message me</h2>
           </legend>
