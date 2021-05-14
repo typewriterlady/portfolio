@@ -22,13 +22,20 @@ export default function FourOFour() {
           name="contact"
           method="POST"
           data-netlify="true"
+          action="/contact/success/"
         >
+          <input type="hidden" name="form-name" value="contact" required />
           <legend>
             <h2>Message me</h2>
           </legend>
           <label>
             Name
-            <input type="text" name="name" placeholder="Albus Dumbledore" />
+            <input
+              type="text"
+              name="name"
+              placeholder="Albus Dumbledore"
+              required
+            />
           </label>
           <br></br>
           <label>
@@ -37,6 +44,7 @@ export default function FourOFour() {
               type="email"
               name="email"
               placeholder="adumbledore@hogwarts.edu"
+              required
             />
           </label>
           <br></br>
