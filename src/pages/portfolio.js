@@ -123,7 +123,7 @@ export default function Portfolio() {
             title="Local investigative story"
             picture={
               <Picture
-                src="https://patch.com/img/cdn/users/1467018/2012/06/raw/3cd0e1a5ca931eae30fd9a9889dc60ee.jpg?width=400"
+                src="../../leaves.jpg"
                 alt="leaves"
               />
             }
@@ -133,7 +133,7 @@ export default function Portfolio() {
             title="Sports coverage"
             picture={
               <Picture
-                src="https://patch.com/img/cdn/users/1467018/2013/08/raw/74155b7da19e75a97c1baabb523d72c5.jpg?width=400"
+                src="../../baseballkids.png"
                 alt="baseball kids"
               />
             }
@@ -143,7 +143,7 @@ export default function Portfolio() {
             title="Profile Zambelli fireworks"
             picture={
               <Picture
-                src="https://patch.com/img/cdn/users/1467018/2012/07/raw/c75825c2c6881cc3b1388027e5d66ba4.jpg?width=400"
+                src="../../fireworkman.jpg"
                 alt="man holding firework"
               />
             }
@@ -153,7 +153,7 @@ export default function Portfolio() {
             title="Profile of local church leader"
             picture={
               <Picture
-                src="https://archive.triblive.com/wp-content/uploads/2019/07/PTRMarotta1041314jpg.jpg"
+                src="../../churchleader.jpg"
                 alt="church leader"
               />
             }
@@ -163,7 +163,7 @@ export default function Portfolio() {
             title="Controversial news piece"
             picture={
               <Picture
-                src="https://media2.fdncms.com/pittsburgh/imager/sign-of-the-times-do-you-work-for-planned-parenthood-or-utilize-its-servic/u/original/1509060/news1_14.jpg"
+                src="../../mansign.jpg"
                 alt="man holding sign"
               />
             }
