@@ -38,7 +38,7 @@ function ImageA(props) {
       text={
         <div className={Styles.imageLink}>
           <div className={Styles.picture}>{props.picture}</div>
-          <p className={Styles.center}>{props.title}</p>
+          <p>{props.title}</p>
         </div>
       }
     />
