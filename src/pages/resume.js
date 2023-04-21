@@ -16,7 +16,7 @@ export default function Template() {
         <iframe
           title="Akasha Chamberlain Resume"
           className={Styles.resume}
-          src="https://drive.google.com/file/d/1yGOgAEg6cC8XggtDzFAQYydMxknsjQ9X/preview"
+          src="https://drive.google.com/file/d/126dMgLMCmYjVfLjUVw3eB_V_6cPGD5yE/preview"
         ></iframe>
       </div>
       <Footer />
